@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento de despesas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>new window.VLibras.Widget('https://vlibras.gov.br/app');</script>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/estilos4.css">
+    <script>
+        let tamanhoFonte = "a";
+
+    function fonte(e) {
+
+        var elemento = $(".aumentaFonte");
+        var fonte = parseInt(elemento.css('font-size'));
+
+        var body = $("body");
+        const fonteNormal = parseInt(body.css('font-size'));
+
+
+        if (tamanhoFonte == 'a') {
+            fonte++;
+            tamanhoFonte = 'd'
+        }else if(tamanhoFonte == 'd'){
+            fonte--;
+            tamanhoFonte = 'a'
+        }
+
+        elemento.css("fontSize", fonte);
+}
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div id="logo"><img src="img/logo.jpeg" alt="Imagem da Logo da Empresa"></div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>|
+                <li><a href="calculadora.html">Orçamento</a></li>|
+                <li><a href="Cadastro.html">Cadastro</a></li>|
+                <li><a href="pagina4 .html">Despesas</a></li>
+            </ul>
+        </div>
+        <div id="acessivel">
+            <button class="botaoA" onclick="fonte()">A+</button>
+        </div>
+    </header>   
+    
+    <div class=banner_despesa>
+        <div class=banner_pg4>
+            <img id="imagem_tamanho" src="img/banner_p4_800.png" alt="Banner sobre finanças">   
+        </div>
+    </div>
+
+    <main>
+        <section class = "titulo">
+            <h2>FINANÇAS</h2>
+            <span>Liste suas despesas</span>
+        </section>
+
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+        <section class = "card">
+            <div class="linhaDeInput">
+                <!-- Colocação do seletor para o usuário escolher a categoria do serviço que deseja -->
+                <label>Categoria</label>
+                <select id="nomeProduto" nome="Categoria" type="text">
+                    <option value="">Selecione a Categoria</option>
+                    <option value="Residencial">Residencial</option>
+                    <option value="Saúde">Saúde</option>
+                    <option value="Lazer">Lazer</option>
+                    <option value="Estética">Estética</option>
+                   
+                </select> 
+            </div>
+            <div class="linhaDeInput">
+                <label>Serviço</label>
+                <input type="text" id="tipoServico" placeholder="Tipo de serviço"></input>
+            </div>
+            <div class="linhaDeInput">
+                <label>Valor</label>
+                <input type="text" id="valorProduto" placeholder="Valor do serviço"></input>
+            </div>
+<!-- Botão onde o usuario adiciona as informações referente ao serviço -->
+            <button class="botao" id="btn1" onclick="produto.salvar()">Salvar</button>
+            <!-- Botão onde o usuario pode limpar os campos  -->
+            <button class="botao" onclick="produto.cancelar()">Cancelar</button>
+        </section>
+        <section class="conteudo">
+            <table border=1>
+                <thead id=fonte_tabela>
+                    <th class="center">ID</th>
+                    <th class="center">Categoria</th>
+                    <th class="center">Serviço</th>
+                    <th class="center">Valor</th>
+                    <th class="center">Açoes</th>
+                </thead>
+                <tbody id="tbody">
+            
+                </tbody>
+            </table>
+            <div class="despesa"> 
+                <p id='tituloSoma' >TOTAL DE DESPESAS</p>
+                  <p id="displaySoma"></p>
+            </div>
+                
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div id="grid-container">
+    
+            <div class="box">
+                <div id="contato"><img src="img/tel.png" alt=""></div>
+                <p>33 3333 3333</p>
+            </div>
+
+            <div class="box">
+                <div id="rede-social"><img src="img/insta.png" alt=""></div>
+                <p>@HOMEGOLDEN</p>
+            </div>
+
+            <div class="box">
+                <div id="email"><img src="img/mail.png" alt=""></div>
+                <p>contato@homegolden.com</p>
+            </div>
+    
+            <div class="box">
+                <div class="info">
+                    <div id="atendimento"></div>
+                    <p>Horário de atendimento:</p> 
+                    <p>das 08:30 às 20h</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <div id="endereco"></div>
+                    <p>Rua do Paraiso, 1000 - Balneário Camboriú/SC</p> 
+                    <P>CEP: 14520-51</P>
+                </div>
+            </div>
+        </div>
+    
+        <div id="copyright">&copyGOLDEN HOME</div>    
+    </footer>
+    <script src="js/scripts4.js"></script>
+</body>
+</html>

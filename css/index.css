@@ -1,0 +1,143 @@
+body{
+    background-color: #F8F7EF;
+}
+
+/* estilização das imagens alternadas */
+.imgAlternadas{
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+
+section{
+    margin-left: 1%;
+}  
+
+
+h1{
+    text-align: center;
+    line-height: 2.2em;
+    margin: 20px; 
+    color:#624378;
+    font-weight: bold;
+}
+
+.quemSomos{
+    line-height: 1.6em;
+    font-size: 18px;
+    white-space:pre-wrap;
+    text-align: center;
+}
+
+
+.diferenciais h4{
+    text-transform: uppercase;
+    color: #644378; 
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+.diferenciais {
+    margin-bottom: 20px;
+}
+
+/* estilizção da da lista diferenciais */
+.diferenciais, .servicos, .lista{
+    margin-left: 2%;
+    line-height: 2em;
+    font-size: 16px;
+} 
+
+    /* conteúdo do texto que tem nas imgalternadas */
+.conteudoTexto{
+    font-family: Open sans-serif;
+    margin: 30px;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+}
+
+.conteudoTexto p{
+    font-size: 18px;
+}
+
+.conteudoTexto h3{
+    font-weight: bold;
+    font-family:Open sans-serif;
+    margin: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: #624378;
+}  
+
+.imagensIndex img{
+    width: 100%;
+    background-size: cover;
+    height: 100%;
+}
+
+.diferenciais{
+    line-height: 2.2em;
+}
+
+.divfundadores{
+    margin-top: 3%;
+}
+
+/* div com as fotos */
+.worker{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3% ;
+    padding-bottom: 3%;
+}
+
+/* imagens da equipe  */
+.imgPolly{
+    width: 150px;
+    height:150px;
+    padding-top: 4%;
+} 
+
+body{
+    background-color:#f8f7ef;
+}
+
+.texto{
+    display: none;
+    width: 60%;
+    height: auto;
+    background-color: #f8f7ef;
+    position: fixed;
+    left: 0;
+    bottom: 55%;
+    border: 2px solid #c9b164;
+    padding: 2%;
+    color: #2e1652;
+}
+
+#divfundadores h3{
+    text-transform: uppercase;
+    color: #624378;
+    font-weight: bold;
+}
+
+.alinhamento{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+@media(max-width: 375px){
+    .worker{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .imgPolly{
+        width: 100px;
+        height: 100px;
+        padding-top: 5%;
+    } 
+    
+}

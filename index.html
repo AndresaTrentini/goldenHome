@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/acessibilidade.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    <script>
+        let tamanhoFonte = "a";
+
+    function fonte(e) {
+
+        var elemento = $(".aumentaFonte");
+        var fonte = parseInt(elemento.css('font-size'));
+
+        var body = $("body");
+        const fonteNormal = parseInt(body.css('font-size'));
+
+
+        if (tamanhoFonte == 'a') {
+            fonte++;
+            tamanhoFonte = 'd'
+        }else if(tamanhoFonte == 'd'){
+            fonte--;
+            tamanhoFonte = 'a'
+        }
+
+        elemento.css("fontSize", fonte);
+
+}
+    </script>
+
+    <title>GOLDEN HOME</title>
+</head>
+
+<body>
+    <!-- header menu  -->
+    <header class="header">
+        <div id="logo"><img src="img/logo.jpeg" alt="Imagem da Logo da Empresa"></div>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>|
+                <li><a href="calculadora.html">Orçamento</a></li>|
+                <li><a href="Cadastro.html">Cadastro</a></li>|
+                <li><a href="pagina4 .html">Despesas</a></li>
+            </ul>
+        </div>
+        <div id="acessivel">
+            <button class="botaoA" onclick="fonte()">A+</button>
+        </div>
+    </header>
+
+    <!-- TIRAR E SECTION E INSERIR O CONTEUDO AQUI -->
+
+    <section>
+        <h1 class="aumentaFonte">SOMOS O GOLDEN HOME – SEU SERVIÇO DE MORADIA, POR ASSINATURA, PARA A MELHOR IDADE!
+        </h1>
+        <p class="quemSomos aumentaFonte" class="servicos">Fundado em 2000, o <B> GOLDEN HOME </B> é o primeiro serviço de moradia por assinatura especializado para a terceira idade no Brasil, localizado em Balneário Camboriú/SC. Com tradição, credibilidade, inovação e serviços de alta qualidade, oferecemos a mais ampla carteira de flats para quem deseja desfrutar da maturidade com qualidade de vida, conforto, segurança, cuidado, interação social e lazer!
+        </p>
+        <ul>
+            <div class="diferenciais ">
+                <h4 class="aumentaFonte">Nossos Diferenciais:</h4>
+                <li class="aumentaFonte lista"> Imóveis inteligentes, adaptados, conectados e sustentáveis e prontos para morar.</li>
+                <li class="aumentaFonte lista"> É incluso na sua assinatura: água, luz, wifi, TV, gás, manutenção, decoração, limpeza semanal.</li>
+                <li class="aumentaFonte lista">More pelo tempo que quiser! No<b> GOLDEN HOME</b> é você quem decide quanto tempo ficar.</li>
+                <li class="aumentaFonte lista">Infraestrutura completa de serviços residenciais, médicos, lazer e estéticos que podem ser incluídos na sua assinatura.</li>
+        </ul>
+        </di>
+        <div class="imgAlternadas">
+            <div class="conteudoTexto">
+                <h3 class="aumentaFonte">SAÚDE:</h3>
+                <p class="aumentaFonte" class="servicos">Médico e Enfermaria (plantão 24hs), Fisioterapeuta, Pilates, Acupuntura.</p>
+            </div>
+            <div class="imagensIndex">
+                <img src="img/piscina.jpg" alt="imagem de uma paisagem com piscina">
+            </div>
+            <div class="imagensIndex">
+                <img src="img/Cora-6-e1545047813609.jpg" alt="pessoas dançando ">
+            </div>
+            <div class="conteudoTexto" class="aumentaFonte">
+                <h3>RESIDENCIAL:</h3>
+                <p class="servicos">Lavanderia, Diarista, Restaurante (com 6 refeições diárias), Enxoval, Serviços de Mercado,
+                    Ferramentaria, Wifi nas áreas comuns.</p>
+            </div>
+            <div class="conteudoTexto" class="aumentaFonte">
+                <h3>LAZER:</h3>
+                <p class="servicos">Aulas de Hidroginástica, Yoga, Dança de Salão, Coral, Violão e Teclado, Academia, Salão de Jogos,
+                    Cinema, Sala de Leitura, Pet Place, Salão de Festas, Piscina, Sauna.</p>
+            </div>
+            <div class="imagensIndex">
+                <img src="img/Franquias-de-serviços-para-idosos.jpeg" alt="pessoas na bicicleta ergometrica">
+            </div>
+            <div class="imagensIndex">
+                <img src="img/lisbon-green-valley-3-47dcfef0.jpg" alt="foto dp condominio visto de cima">
+            </div>
+            <div class="conteudoTexto">
+                <h3>ESTÉTICO:</h3>
+                <p class="aumentaFonte servicos">Salão de beleza/barbearia, manicure, massagens, tratamentos faciais e corporais completos.</p>
+            </div>
+        </div>
+        <!-- equipe com efeito em java -->
+        <div class="divfundadores">
+            <h3>Fundadores:</h3>
+            <div class="alinhamento">
+                <div class="worker">
+                    <div class="funcionario">
+                        <picture><img src="img/Poli.png" class="imgPolly" id="administrativo">
+                            <legend>Administrativo</legend>
+                        </picture>
+                    </div>
+                    <div class="funcionario">
+                        <picture><img src="img/Livia.png" class="imgPolly " id="arquitetura">
+                            <legend>Arquitetura</legend>
+                        </picture>
+                    </div>
+                    <div class="funcionario">
+                        <picture><img src="img/Andresa.png" class="imgPolly" id="marketing">
+                            <legend>Marketing</legend>
+                        </picture>
+                    </div>
+                    <div class="funcionario">
+                        <picture><img src="img/Elisa.png" class="imgPolly" id="comercial">
+                            <legend>Comercial</legend>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+            <div id="descricao">
+                <p name="administrativo" class="texto"> Graduada em Administração, Contábeis e com especialização em
+                    Controladoria e Finanças, possui 18 anos de experiência profissional, atuando em empresas de grande
+                    porte nos segmentos industrial e de serviços. É responsável pela gestão do condomínio e por garantir
+                    a excelência dos processos e atendimentos.
+                    “A excelência é uma arte adquirida através do treinamento e do hábito. No GOLDEN HOME agimos com
+                    foco diário no encantamento dos nossos clientes, para mantermos nossa qualidade e nosso elevado
+                    padrão de atendimento.”
+                    Pollyanna Bicalho Fernandes
+                </p>
+                <P name="arquitetura" class="texto"> Graduada em arquitetura na USP, com 15 anos de experiência em
+                    projetos de grande porte, especialista em acessibilidade. Responsável pelo projeto de readequação e
+                    acessibilidade do Teatro Municipal de São Paulo/SP.
+                    “A arquitetura do GOLDEN HOME foi desenvolvida ao fazermos de simples traços a projeção de sonhos, a
+                    construção da realidade, do desejo em arte concreta, para o desfrute dos melhores anos da sua vida.
+                    Venha nos conhecer!”
+                    Lívia Pereira Pondé
+                    Arquitetura / Infraestrutura
+                </P>
+                <P name="marketing" class="texto"> Graduada em Marketing e especialista em Gestão de Produtos e Mídias
+                    Sociais,
+                    atuou em 3 agências de Marketing, possuindo vasto portfólio de campanhas,
+                    serviços digitais, construção e consolidação de branding.
+                    “Nosso trabalho no GOLDEN HOME é nos conectar com pessoas para interagir
+                    com elas de uma maneira que as deixemos melhor do que encontramos. Vivendo
+                    experiências únicas e prazerosas!”
+                    Andresa Trentini
+                </P>
+                <P name="comercial" class="texto"> Graduada em Gestão Comercial na Universidade de Coimbra, foi Diretora
+                    Comercial da Amazon Brazil. No GOLDEN HOME ela é responsável por encantar os clientes ao entender
+                    suas necessidades e ajudá-los a encontrar o pacote de benefícios ideal ao seu desejo e
+                    particularidades.
+                    “O sucesso não tem a ver com quanto dinheiro você ganha, mas com o impacto que gera na vida de
+                    outras pessoas. No GOLDEN HOME primamos por experiências e qualidade de vida indiscutíveis!”
+                    Elisa Santana Gonçalves
+                    Comercial / Relacionamento
+                </P>
+
+            </div>
+
+        </div>
+
+
+    </section>
+    <!-- footer informações -->
+    <footer class="footer">
+        <div id="grid-container">
+            <div class="box">
+                <div id="contato"><img src="img/tel.png" alt=""></div>
+                <p>33 3333 3333</p>
+            </div>
+
+            <div class="box">
+                <div id="rede-social"><img src="img/insta.png" alt=""></div>
+                <p>@HOMEGOLDEN</p>
+            </div>
+
+            <div class="box">
+                <div id="email"><img src="img/mail.png" alt=""></div>
+                <p>contato@homegolden.com</p>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <div id="atendimento" ></div>
+                    <p>Horário de atendimento:</p> 
+                    <p>das 08:30 às 20h</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="info">
+                    <div id="endereco" ></div>
+                    <p>Rua do Paraiso, 1000 - Balneário Camboriú/SC</p> 
+                    <p>CEP: 14520-51</p>
+                </div>
+            </div>
+        </div>
+        <!-- libras  -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+
+
+        <div id="copyright">&copyGOLDEN HOME</div>
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+#logo{
+    margin-left: 1em;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto auto;
+    background-color: #3f3655;
+    border-top: 5px solid #DCCB7B;
+    border-bottom: 5px solid #DCCB7B;
+    width: 100%;
+    height: auto;
+}
+
+#menu {
+    color: #DCCB7B;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#menu ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;    
+    justify-content: space-around;
+
+}
+
+#menu li a{
+    text-decoration: none;
+    color: #DCCB7B;
+    transition-duration: 0.4;
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+}
+
+#menu li a:hover{
+    color: white;
+    font-size: 21px;
+}
+
+#acessivel{
+    color: #DCCB7B;
+    margin-left: auto;
+    padding-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 20px;
+}
+
+#acessivel span{
+    margin: 3px;
+    cursor: pointer;
+}
+
+#fonteMenor, #fonteMaior{
+    border: 1px solid #DCCB7B;
+    border-radius: 3px;
+}
+
+.footer{
+    background-color: #3f3655;
+    border-top: 5px solid #DCCB7B;
+    border-bottom: 5px solid #DCCB7B;
+    width: 100%;
+    height: auto;
+}   
+
+#grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 1fr;
+    height: 80px;
+}
+
+#contato, #rede-social, #email{
+    margin: auto;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-left: auto;
+}
+
+.botaoA{
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: #DCCB7B;
+    cursor: pointer;
+}
+
+.box p{
+    margin: auto;
+    padding-left: 10px;
+    color: #DCCB7B;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#copyright{
+    text-align: center;
+    color: #DCCB7B;
+    font-size: 13px;
+}
+
+@media (max-width: 375px){
+   
+    .header{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo img{
+        width: 80px;
+    }   
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #menu{
+        font-size: 15px;
+    }
+
+    .footer{
+        height: 250px;
+    }
+
+
+    #acessivel span{
+        font-size: 13px;
+    }
+
+    #grid-container{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #copyright{
+        margin-top: 130px;
+    }
+}
+
+
+@media (max-width:768px){
+    .footer{
+        font-size: 10px;
+    } 
+
+    .icone img{
+        width: 25px;
+    }
+}
+
+@media (max-width: 425px){
+    .header{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    #logo img{
+        width: 80px;
+    }   
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #menu{
+        font-size: 15px;
+    }
+
+    .footer{
+        height: 250px;
+    }
+
+
+    #acessivel span{
+        font-size: 16px;
+    }
+
+    #grid-container{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #copyright{
+        margin-top: 130px;
+    }
+}
+
+@media (max-width: 375px){
+   
+    .header{
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #logo img{
+        width: 80px;
+    }   
+
+    #logo{
+        display: flex;
+        justify-content: center;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #menu{
+        font-size: 15px;
+    }
+
+    .footer{
+        height: 250px;
+    }
+
+
+    #acessivel span{
+        font-size: 13px;
+    }
+
+    #grid-container{
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    #copyright{
+        margin-top: 130px;
+    }
+}
